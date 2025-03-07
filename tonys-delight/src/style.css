@@ -65,14 +65,17 @@ body {
 }
 
 /* Hero Section */
+
 .hero {
-  background: url('/images/hero.jpg') no-repeat center center/cover;
   color: #fff;
   height: 100vh; /* Make the hero section fill the entire viewport height */
   display: flex;
   justify-content: center; /* Center content horizontally */
   align-items: center; /* Center content vertically */
   text-align: center; /* Center text */
+  background-size: cover; /* Ensure the background image covers the entire section */
+  background-position: center; /* Center the background image */
+  transition: background-image 1s ease-in-out; /* Smooth transition between images */
 }
 
 .hero .container {
@@ -103,6 +106,174 @@ body {
 
 .hero .btn:hover {
   background: #e65a50; /* Darker shade on hover */
+}
+
+/* Logo Styles */
+.logo {
+  display: flex;
+  align-items: center; /* Align logo and text vertically */
+}
+
+.logo img {
+  height: 50px; /* Adjust logo height as needed */
+  margin-right: 10px; /* Add spacing between logo and text */
+}
+
+.logo-text {
+  font-family: 'Poppins', sans-serif; /* Use Poppins font */
+  font-size: 1.5rem; /* Adjust font size */
+  font-weight: 600; /* Semi-bold text */
+  color: #fff; /* White text color */
+  text-transform: uppercase and lowercase; /* Uppercase text */
+}
+/* Hero Section */
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  font-weight: 700; /* Bold font for the heading */
+  color: rgb(246, 155, 18); /* Change h1 text color to yellow */
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  font-weight: 400; /* Normal font for the paragraph */
+  color: rgb(246, 155, 18); /* Change p text color to yellow */
+}
+.container {
+  display: flex;
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically (if needed) */
+  text-align: center; /* Ensures text inside is centered */
+  width: 100%; /* Ensures full width */
+  flex-direction: column; /* Stack elements vertically */
+}
+
+/* Assortment Section */
+.assortment {
+  padding: 50px 0;
+  background: #f9f9f9; /* Light background color */
+  text-align: center; /* Center align the content */
+}
+
+.assortment h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #333; /* Dark text color */
+  text-align: center; /* Ensures heading is centered */
+  width: 100%; /* Full width to maintain centering */
+}
+
+/* Center and align cards in one row */
+.card-container {
+  display: flex;
+  justify-content: center; /* Center cards horizontally */
+  align-items: center; /* Align cards vertically */
+  gap: 20px; /* Spacing between cards */
+  flex-wrap: nowrap; /* Prevent wrapping */
+  width: 100%; /* Ensures container takes full width */
+}
+
+/* Card styling */
+.card {
+  width: 250px; /* Fixed width for each card */
+  background: #fff; /* White background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+  overflow: hidden; /* Ensure content stays within the card */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+  flex-shrink: 0; /* Prevents cards from shrinking */
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Lift card on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+.card img {
+  width: 100%;
+  height: 150px; /* Fixed height for images */
+  object-fit: cover; /* Ensure images fit well */
+}
+
+.card-content {
+  padding: 20px;
+  text-align: center; /* Center align text */
+}
+
+.card-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #ff6f61; /* Accent color for titles */
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .card-container {
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  }
+
+  .card {
+    width: 45%; /* Two cards per row */
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 100%; /* Full width on smaller screens */
+    max-width: 300px;
+  }
+}
+
+Menu Section */ .menu {
+  padding: 50px 0;
+  background: #f9f9f9; /* Light background color */
+}
+
+.menu .container {
+  text-align: center; /* Center align the content */
+}
+
+.menu h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #333; /* Dark text color */
+}
+
+.menu-category {
+  margin-bottom: 40px;
+}
+
+.menu-category h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #ff6f61; /* Accent color for category titles */
+}
+
+.menu-category ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-category ul li {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #555; /* Slightly darker text color */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .menu h2 {
+    font-size: 2rem;
+  }
+
+  .menu-category h3 {
+    font-size: 1.5rem;
+  }
+
+  .menu-category ul li {
+    font-size: 1rem;
+  }
 }
 
 /* Responsive Styles */
