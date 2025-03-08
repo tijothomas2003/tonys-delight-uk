@@ -9,11 +9,11 @@
 }
 
 body {
-  font-family: 'Poppins', Arial, sans-serif; /* Change font to Poppins */
+  font-family: 'Bebas Neue', sans-serif;
   line-height: 1.6;
 }
 
-/* Rest of your CSS */
+/* Container */
 .container {
   width: 90%;
   max-width: 1200px;
@@ -21,17 +21,19 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  text-align: center;
+  flex-direction: column;
 }
 
 /* Header */
 .header {
   background: rgba(51, 51, 51, 0.8); /* Semi-transparent background */
   color: #fff;
-  padding: 15px 0; /* Increased padding for better spacing */
-  position: fixed; /* Make navbar stick to the top */
-  width: 100%; /* Full width */
-  top: 0; /* Align to the top */
-  z-index: 1000; /* Ensure navbar is above other content */
+  padding: 15px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
 }
 
 .header .logo img {
@@ -44,54 +46,52 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: flex-end; /* Align items to the right */
+  justify-content: flex-end;
 }
 
 .nav ul li {
-  margin-left: 20px; /* Spacing between menu items */
+  margin-left: 20px;
 }
 
 .nav ul li a {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
-  padding: 8px 12px; /* Add padding for better click area */
-  transition: background 0.3s ease; /* Smooth hover effect */
+  padding: 8px 12px;
+  transition: background 0.3s ease;
 }
 
 .nav ul li a:hover {
-  background: rgba(255, 255, 255, 0.1); /* Light background on hover */
-  border-radius: 4px; /* Rounded corners */
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
 }
 
 /* Hero Section */
-
 .hero {
+  background-image: url('/images/hero-bg.jpg'); /* Add a default image */
+  background-size: cover;
+  background-position: center;
   color: #fff;
-  height: 100vh; /* Make the hero section fill the entire viewport height */
+  height: 100vh;
   display: flex;
-  justify-content: center; /* Center content horizontally */
-  align-items: center; /* Center content vertically */
-  text-align: center; /* Center text */
-  background-size: cover; /* Ensure the background image covers the entire section */
-  background-position: center; /* Center the background image */
-  transition: background-image 1s ease-in-out; /* Smooth transition between images */
-}
-
-.hero .container {
-  flex-direction: column; /* Stack content vertically */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: background-image 1s ease-in-out;
 }
 
 .hero h1 {
   font-size: 3rem;
   margin-bottom: 10px;
-  font-weight: 700; /* Bold font for the heading */
+  font-weight: 700;
+  color: rgb(246, 155, 18);
 }
 
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 20px;
-  font-weight: 400; /* Normal font for the paragraph */
+  font-weight: 400;
+  color: rgb(246, 155, 18);
 }
 
 .hero .btn {
@@ -100,144 +100,102 @@ body {
   padding: 10px 20px;
   text-decoration: none;
   border-radius: 5px;
-  transition: background 0.3s ease; /* Smooth hover effect */
-  font-weight: 500; /* Medium font for the button */
+  transition: background 0.3s ease;
+  font-weight: 500;
 }
 
 .hero .btn:hover {
-  background: #e65a50; /* Darker shade on hover */
+  background: #e65a50;
 }
 
 /* Logo Styles */
 .logo {
   display: flex;
-  align-items: center; /* Align logo and text vertically */
+  align-items: left;
 }
 
 .logo img {
-  height: 50px; /* Adjust logo height as needed */
-  margin-right: 10px; /* Add spacing between logo and text */
+  height: 50px;
+  margin-right: 10px;
 }
 
 .logo-text {
-  font-family: 'Poppins', sans-serif; /* Use Poppins font */
-  font-size: 1.5rem; /* Adjust font size */
-  font-weight: 600; /* Semi-bold text */
-  color: #fff; /* White text color */
-  text-transform: uppercase and lowercase; /* Uppercase text */
-}
-/* Hero Section */
-.hero h1 {
-  font-size: 3rem;
-  margin-bottom: 10px;
-  font-weight: 700; /* Bold font for the heading */
-  color: rgb(246, 155, 18); /* Change h1 text color to yellow */
-}
-
-.hero p {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
-  font-weight: 400; /* Normal font for the paragraph */
-  color: rgb(246, 155, 18); /* Change p text color to yellow */
-}
-.container {
-  display: flex;
-  justify-content: center; /* Centers content horizontally */
-  align-items: center; /* Centers content vertically (if needed) */
-  text-align: center; /* Ensures text inside is centered */
-  width: 100%; /* Ensures full width */
-  flex-direction: column; /* Stack elements vertically */
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #c75555;
+  text-transform: uppercase;
 }
 
 /* Assortment Section */
 .assortment {
   padding: 50px 0;
-  background: #f9f9f9; /* Light background color */
-  text-align: center; /* Center align the content */
+  background: #f9f9f9;
+  text-align: center;
 }
 
 .assortment h2 {
   font-size: 2.5rem;
   margin-bottom: 30px;
-  color: #333; /* Dark text color */
-  text-align: center; /* Ensures heading is centered */
-  width: 100%; /* Full width to maintain centering */
+  color: #333;
 }
 
-/* Center and align cards in one row */
 .card-container {
   display: flex;
-  justify-content: center; /* Center cards horizontally */
-  align-items: center; /* Align cards vertically */
-  gap: 20px; /* Spacing between cards */
-  flex-wrap: nowrap; /* Prevent wrapping */
-  width: 100%; /* Ensures container takes full width */
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: nowrap;
+  width: 100%;
 }
 
-/* Card styling */
+/* Card Styling */
 .card {
-  width: 250px; /* Fixed width for each card */
-  background: #fff; /* White background */
-  border-radius: 10px; /* Rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
-  overflow: hidden; /* Ensure content stays within the card */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
-  flex-shrink: 0; /* Prevents cards from shrinking */
+  width: 250px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex-shrink: 0;
 }
 
 .card:hover {
-  transform: translateY(-10px); /* Lift card on hover */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .card img {
   width: 100%;
-  height: 150px; /* Fixed height for images */
-  object-fit: cover; /* Ensure images fit well */
+  height: 150px;
+  object-fit: cover;
 }
 
 .card-content {
   padding: 20px;
-  text-align: center; /* Center align text */
+  text-align: center;
 }
 
 .card-content h3 {
   font-size: 1.5rem;
   margin-bottom: 15px;
-  color: #ff6f61; /* Accent color for titles */
+  color: #ff6f61;
 }
 
-/* Responsive Styles */
-@media (max-width: 1024px) {
-  .card-container {
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
-  }
-
-  .card {
-    width: 45%; /* Two cards per row */
-  }
-}
-
-@media (max-width: 768px) {
-  .card {
-    width: 100%; /* Full width on smaller screens */
-    max-width: 300px;
-  }
-}
-
-Menu Section */ .menu {
+/* Menu Section */
+.menu {
   padding: 50px 0;
-  background: #f9f9f9; /* Light background color */
+  background: #f9f9f9;
 }
 
 .menu .container {
-  text-align: center; /* Center align the content */
+  text-align: center;
 }
 
 .menu h2 {
   font-size: 2.5rem;
   margin-bottom: 30px;
-  color: #333; /* Dark text color */
+  color: #333;
 }
 
 .menu-category {
@@ -247,7 +205,7 @@ Menu Section */ .menu {
 .menu-category h3 {
   font-size: 1.8rem;
   margin-bottom: 15px;
-  color: #ff6f61; /* Accent color for category titles */
+  color: #ff6f61;
 }
 
 .menu-category ul {
@@ -258,44 +216,171 @@ Menu Section */ .menu {
 .menu-category ul li {
   font-size: 1.2rem;
   margin-bottom: 10px;
-  color: #555; /* Slightly darker text color */
+  color: #555;
 }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
-  .menu h2 {
-    font-size: 2rem;
-  }
+/* Values Hero Section */
+.values-hero {
+  background-image: url('/images/values-hero.jpg'); /* Add a relevant image */
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 
-  .menu-category h3 {
-    font-size: 1.5rem;
-  }
+.values-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+  color: rgb(246, 155, 18); /* Match your theme color */
+}
 
-  .menu-category ul li {
-    font-size: 1rem;
+.values-hero p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: rgb(246, 155, 18); /* Match your theme color */
+}
+/* Values Content Section */
+.values-content {
+  padding: 50px 0;
+  position: relative; /* Required for overlay */
+  overflow: hidden; /* Hide overflow for scrolling effect */
+}
+
+/* Background Image */
+.values-content::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/images/values-bg.jpg'); /* Add your background image */
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5; /* 50% visibility */
+  z-index: -1; /* Place behind the content */
+}
+
+/* Container for Text */
+.values-content .container {
+  position: relative; /* Ensure text is above the background */
+  z-index: 1; /* Place text above the background */
+}
+
+/* Scrolling Text */
+.scrolling-text {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  /*Spacingbetweentextitems*/
+  animation: scroll 13s linear infinite;
+  /*Increasedurationforslowerscrolling*/ /*Increasedurationforslowerscrolling*/
+  -webkit-animation: scroll 30s linear infinite;
+  -webkit-animation: scroll 13s linear infinite;
+}
+
+.scroll-item {
+  text-align: center;
+  opacity: 0; /* Start with text invisible */
+  transform: translateY(20px); /* Start slightly below */
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.scroll-item.fade-in {
+  opacity: 1; /* Fade in */
+  transform: translateY(0); /* Move to original position */
+}
+
+/* Keyframes for scrolling animation */
+@keyframes scroll {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(-100%);
   }
 }
 
+.values-content .container {
+  display: flex; /* Use Flexbox for horizontal layout */
+  justify-content: space-between; /* Space cards evenly */
+  gap: 25px; /* Add spacing between cards */
+  overflow-x: auto; /* Allow horizontal scrolling on small screens */
+  padding-bottom: 5px; /* Add padding for scrollbar */
+}
+
+.value-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex: 1; /* Allow cards to grow and fill available space */
+  min-width: 250px; /* Minimum width for each card */
+}
+
+.value-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.value-icon {
+  font-size: 2.5rem;
+  color: #ff6f61; /* Accent color */
+  margin-bottom: 20px;
+}
+
+.value-card h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.value-card p {
+  font-size: 3rem;
+  color: #555;
+  line-height: 1.6;
+}
 /* Responsive Styles */
+@media (max-width: 1024px) {
+  .card-container {
+    flex-wrap: wrap;
+  }
+
+  .card {
+    width: 45%;
+  }
+}
+
 @media (max-width: 768px) {
   .header {
-    padding: 10px 0; /* Reduce padding on smaller screens */
+    padding: 10px 0;
+  }
+
+  .logo-text {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #666666;
+    text-transform: uppercase;
+    margin-left: 10px;
   }
 
   .nav ul {
     display: none;
     flex-direction: column;
-    background: rgba(
-      51,
-      51,
-      51,
-      0.9
-    ); /* Semi-transparent background for mobile menu */
+    background: rgba(51, 51, 51, 0.9);
     position: absolute;
     top: 60px;
     left: 0;
     width: 100%;
-    text-align: center; /* Center align menu items */
+    text-align: center;
   }
 
   .nav ul.active {
@@ -303,11 +388,184 @@ Menu Section */ .menu {
   }
 
   .nav ul li {
-    margin-left: 0; /* Remove left margin */
-    margin-bottom: 10px; /* Add spacing between stacked items */
+    margin-left: 0;
+    margin-bottom: 10px;
   }
 
   .header .menu-toggle {
     display: flex;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+/* Contact & Footer Section */
+.contact-footer-section {
+  padding: 50px 20px; /* Adjusted padding for smaller screens */
+  background: url('/images/contact-bg.jpg') no-repeat center center/cover;
+  text-align: center;
+  position: relative;
+  color: white;
+}
+
+.contact-footer-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+}
+
+.contact-footer-section .container {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.contact-footer-section h2 {
+  font-size: 2rem; /* Reduced size for better mobile experience */
+  margin-bottom: 20px;
+  color: white;
+}
+
+.contact-footer-section p {
+  font-size: 1.1rem;
+  color: #ddd;
+  margin-bottom: 30px; /* Reduced space for compactness */
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  gap: 30px; /* Reduced gap for better alignment */
+  flex-wrap: wrap;
+}
+
+.contact-item {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 260px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.contact-item i {
+  font-size: 2rem;
+  color: #ff6f61;
+  margin-bottom: 15px;
+}
+
+.contact-item h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.contact-item p {
+  font-size: 1rem;
+  color: #ddd;
+  line-height: 1.5;
+}
+
+.contact-item a {
+  color: white;
+  text-decoration: none;
+}
+
+.contact-item a:hover {
+  color: #bbb;
+}
+
+/* Footer Styling */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 30px auto 0;
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 10px;
+  min-width: 200px;
+  text-align: center;
+}
+
+.footer-section h3 {
+  font-size: 17px;
+  margin-bottom: 12px;
+  color: white;
+}
+
+.footer-section table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.footer-section table td {
+  padding: 5px 0;
+  color: #ddd;
+  text-align: center;
+}
+
+.footer-section a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .contact-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+
+  .footer-section {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .contact-footer-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .contact-footer-section p {
+    font-size: 1rem;
+  }
+
+  .contact-item {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .footer-section table td {
+    font-size: 0.9rem;
   }
 }
